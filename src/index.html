@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skinaria - Deteksi Masalah Kulitmu</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav container">
+                <div class="logo">Skinaria</div>
+                <ul class="nav-links">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#cara-kerja">Cara Kerja</a></li>
+                    <li><a href="#artikel">Artikel</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="beranda" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Kenali Masalah Kulitmu</h1>
+                        <h2>Lebih Cepat</h2>
+                        <p>Deteksi dini berbagai kondisi kulit hanya dengan satu gambar. Akurat, cepat, dan mudah digunakan.</p>
+                        <button class="btn-primary" @click="startDetection">
+                            Mulai Deteksi Sekarang
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="tentang" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Tentang</h2>
+                    <p>Skinaria adalah aplikasi web berbasis machine learning yang dapat membantu pengguna dalam mendeteksi jenis penyakit kulit sejak dini melalui gambar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="cara-kerja" class="how-it-works">
+            <div class="container">
+                <h2>Cara Kerja</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">📤</div>
+                        <h3>Upload Gambar</h3>
+                        <p>Unggah foto kondisi kulit yang ingin dianalisis.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">🤖</div>
+                        <h3>Analisis AI</h3>
+                        <p>Gambar dianalisis oleh model machine learning terbaik.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">📋</div>
+                        <h3>Hasil & Rekomendasi</h3>
+                        <p>Skinoria menampilkan jenis kondisi kulit dan saran penanganan awal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="artikel" class="articles">
+            <div class="container">
+                <h2>Artikel</h2>
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <div class="article-image">🔬</div>
+                        <div class="article-content">
+                            <h3>Kenali 7 Jenis Penyakit Kulit dan...</h3>
+                            <div class="article-date">30 April 2025</div>
+                            <p>Penyakit kulit adalah kondisi medis yang mempengaruhi lapisan luar tubuh, yaitu kulit. Kondisi ini dapat disebabkan oleh berbagai faktor, termasuk infeksi, alergi, peradangan, dan faktor genetik.</p>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <div class="article-image">⚠️</div>
+                        <div class="article-content">
+                            <h3>Jenis Penyakit Kulit yang Perlu Ka...</h3>
+                            <div class="article-date">6 Maret 2025</div>
+                            <p>Penyakit kulit tidak hanya membuat penampilan menjadi tidak nyaman karena gejala yang ditimbulkannya. Penyakit ini juga dapat mempengaruhi kepidupan sosial penderitanya. Oleh karena itu pe...</p>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <div class="article-image">📊</div>
+                        <div class="article-content">
+                            <h3>10 Penyakit Kulit yang Paling Umu...</h3>
+                            <div class="article-date">5 Maret 2025</div>
+                            <p>Penyakit kulit adalah penyakit yang sangat menyebalkan. Terlepas dari dampaknya ke fisik, penyakit kulit ternyata lebih membebankan emosional dan psikologis seseorang karena dampak...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Skinoria. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    message: 'Welcome to Skinoria'
+                }
+            },
+            methods: {
+                startDetection() {
+                    alert('Fitur deteksi akan segera tersedia! Terima kasih atas minat Anda.');
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
